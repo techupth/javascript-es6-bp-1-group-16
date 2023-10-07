@@ -1,7 +1,7 @@
 let studentProfile = {
   name: "John",
   age: 20,
-  scores: {
+  scores: {     //เป็น {}
     thai: 40,
   },
 };
@@ -13,5 +13,6 @@ let studentScores = {
 };
 
 // Start coding here
-
+let newStudentProfile = studentProfile;
+newStudentProfile['scores'] = {...newStudentProfile['scores'],...studentScores}
 console.log(newStudentProfile);

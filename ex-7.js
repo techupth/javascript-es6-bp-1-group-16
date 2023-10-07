@@ -3,7 +3,8 @@ const employee1 = {
   age: 20,
 };
 
-const result1 = employee1.scores.english;
+const result1 = employee1?.scores?.english; //ใส่ ? นำหน้า .ที่ไม่มี
+console.log(result1);
 
 const employee2 = {
   name: "A",
@@ -13,4 +14,6 @@ const employee2 = {
   },
 };
 
-const result2 = employee2.scores.english;
+const result2 = employee2.scores?.english;
+console.log(result2 ?? "English score is not defined"); //ใช้ nullish coalescing
+

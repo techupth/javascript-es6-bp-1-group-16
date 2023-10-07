@@ -1,4 +1,4 @@
-let studentProfile = {
+let studentProfile = {              // เป็น { }
   name: "John",
   age: 20,
   scores: {
@@ -12,5 +12,5 @@ let additionalProperties = {
 };
 
 // Start coding here
-
+let newStudentProfile = {...studentProfile, ...additionalProperties};
 console.log(newStudentProfile);
